@@ -1,0 +1,26 @@
+{
+  "name": "audio-angular",
+  "version": "0.0.1",
+  "description": "This is a simple, one-file angular audio player.",
+  "author": {
+    "name": "Vincent DeFrancesco",
+    "email": "vincentg.defrancesco@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdefranc/audio-angular"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.8.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-open": "~0.2.3",
+    "connect-livereload": "~0.3.2",
+    "grunt-contrib-concat": "^0.4.0"
+  }
+}

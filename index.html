@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Audio-Angular</title>
+    <script src="dist/lib/angular-1.2.27.min.js"></script>
+    <script src="dist/audio-angular.js"></script>
+    <link rel="stylesheet" href="dist/audio-angular.css">
+    <!-- <script type="text/javascript" src ="jquery-1.11.1.min.js"></script> -->
+  </head>
+  <body ng-app="Ng-Audio" style="border-left: 1px solid #ccc;border-right: 1px solid #ccc;margin: 0 auto;padding: 1em;width: 60%;max-width: 600px;">
+  	<h1>Simple Angular Audio Widget</h1>
+
+    <aside ng-controller="InterviewCtrl as ctrl" id="thiel-interview-1" class="thiel-player" >
+        <img src="//placehold.it/600x400&text=Interview Subject" />
+        <h4>An Interview With {{subject}}</h4>
+        <div class="toggle-container">
+            <div ng-click="toggle()" class="thiel-audio-toggle" ng-class="{play: !playing, pause: playing}"></div>
+            <div class="time-container"><p>{{currentTime | numToSecs}} / {{duration | numToSecs}}</p></div>
+        </div>
+        <audio id="thiel-interview-1-audio" class="thiel-audio" preload="auto">
+            <source src="//s3.amazonaws.com/chronicle-studio/thiel/dist/audio/daniel.mp3" type="audio/mp3" />
+            <source src="//s3.amazonaws.com/chronicle-studio/thiel/dist/audio/daniel.wav" type="audio/wav" />
+            <source src="//s3.amazonaws.com/chronicle-studio/thiel/dist/audio/daniel.ogg" type="audio/ogg" />
+        </audio>
+    </aside>
+
+  </body>
+</html>

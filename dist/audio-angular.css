@@ -1,0 +1,44 @@
+aside.thiel-player {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+  overflow: hidden; }
+  aside.thiel-player img {
+    width: 30%;
+    float: left;
+    margin-right: 2em; }
+    @media (max-width: 650px) {
+      aside.thiel-player img {
+        width: 100%;
+        float: none; } }
+  aside.thiel-player h4 {
+    margin-top: 0; }
+    @media (max-width: 650px) {
+      aside.thiel-player h4 {
+        margin-top: 1em; } }
+  aside.thiel-player .toggle-container {
+    overflow: hidden;
+    margin-right: 0; }
+    aside.thiel-player .toggle-container .thiel-audio-toggle {
+      height: 3em;
+      width: 3em;
+      background-size: contain;
+      background-position: center;
+      float: left;
+      cursor: pointer; }
+      aside.thiel-player .toggle-container .thiel-audio-toggle:hover {
+        background-color: white; }
+      aside.thiel-player .toggle-container .thiel-audio-toggle.play {
+        background-image: url("http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-play.png"); }
+      aside.thiel-player .toggle-container .thiel-audio-toggle.pause {
+        background-image: url("http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-pause.png"); }
+    aside.thiel-player .toggle-container .time-container {
+      float: left;
+      width: 80%;
+      padding-top: 0.45em; }
+      aside.thiel-player .toggle-container .time-container.timePlay {
+        opacity: 1; }
+      aside.thiel-player .toggle-container .time-container p {
+        margin: 0; }
+
+/*# sourceMappingURL=audio-angular.css.map */

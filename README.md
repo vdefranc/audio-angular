@@ -1,0 +1,1 @@
+This is a simple, angular-based, single-file audio player.

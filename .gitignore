@@ -1,0 +1,5 @@
+.sass-cache
+startup.sh
+node_modules
+*.log
+.DS_Store

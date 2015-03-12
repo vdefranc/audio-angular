@@ -1,0 +1,65 @@
+aside.thiel-player {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 1em 0;
+	overflow: hidden;
+
+	img {
+		width: 30%;
+		float: left;
+		margin-right: 2em;
+
+		@media (max-width: 650px) {
+			width: 100%;
+			float: none;
+		}
+	}
+	h4 {
+		margin-top: 0;
+
+		@media (max-width: 650px) {
+			margin-top: 1em;
+		}
+	}
+
+	.toggle-container {
+		overflow: hidden;
+		margin-right: 0;
+		//padding-top: 1.2em;
+
+		.thiel-audio-toggle {
+			height: 3em;
+			width: 3em;
+			background-size: contain;
+			background-position: center;
+			float: left;
+			cursor: pointer;
+
+			&:hover {
+				background-color: white;
+			}
+			&.play {
+				background-image: url('http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-play.png');
+			}
+			&.pause {
+				background-image: url('http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-pause.png');
+			}
+		}
+
+		.time-container{
+			float: left;
+			width: 80%;
+			padding-top: 0.45em;
+
+			&.timePlay {
+					opacity: 1;
+			}
+
+			p {
+				margin: 0;
+			}
+			
+		}
+	}
+
+}

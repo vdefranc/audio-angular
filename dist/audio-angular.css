@@ -1,3 +1,21 @@
+/* media query vars */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 1em;
+  width: 60%; }
+  @media (max-width: 800px) {
+    body {
+      width: 80%;
+      border: none; } }
+  @media (max-width: 350px) {
+    body {
+      width: 95%;
+      padding: 0; } }
+
 aside.thiel-player {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;

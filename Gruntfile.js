@@ -17,20 +17,6 @@ module.exports = function(grunt) {
 				files: 'src/css/*.scss',
 				tasks: ['sass']
 			},
-	    	/*
-	    	files: ['src/js/*.js',
-	      			'index.html'
-	      		],
-	    	tasks: ['jshint', 'jasmine'],
-	     	css: {
-				files: 'src/css/*.scss',
-				tasks: ['sass']
-			},
-			js: {
-				files: 'src/js/*.js',
-				tasks: ['concat']
-			},
-			*/
 			livereload: {
 		        files: [
 		          'index.html',
@@ -44,21 +30,25 @@ module.exports = function(grunt) {
 	      	options: {
 	        	globals: {
 	          		//jQuery: true,
-	          		angular: true
+	          		//angular: true
 	        	}
 	      	}
 	    },
 		sass: {
 			dist: {
 				files: {
-					'dist/audio-angular.css' : 'src/css/audio-angular.scss'
+					'dist/audio-angular.css' : 'src/css/compiled/compiled-sass.scss'
 				}
 			}
 		},
 		concat: {
 			js: {
-				src: ['src/js/audio-angular.js'],
+				src: ['src/js/audio-angular.js', 'src/js/second.js'],
 				dest: 'dist/audio-angular.js'
+			},
+			css: {
+				src: ['src/css/template.scss', 'src/css/!(template)*.scss'],
+				dest: 'src/css/compiled/compiled-sass.scss'
 			}
 		},
 	    open: { //not added to dependencies yet <<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -88,6 +78,7 @@ module.exports = function(grunt) {
 	// Load the plugin that provides the "uglify" task.
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-jasmine');
 	grunt.loadNpmTasks('grunt-open');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-connect');

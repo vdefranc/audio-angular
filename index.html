@@ -9,14 +9,14 @@
   <body ng-app="Ng-Audio">
   	<h1>Simple Angular Audio Widget</h1>
     <p>This is an audio widget designed to play a short interview. Multiple interviews can be embedded very easily into a single page by creating discrete controlers. You can see the player in action by viewing <a href="http://chronicle.com/article/The-Rich-Mans-Dropout-Club/151703/">The Rich Man's Dropout Club</a>, a story I produced for The Chronicle of Higher Education.</p>
-    <aside ng-controller="InterviewCtrl as ctrl" id="thiel-interview-1" class="thiel-player" >
+    <aside ng-controller="InterviewCtrl as ctrl" id="ng-audio-interview-1" class="ng-audio-player" >
         <img src="//placehold.it/600x400&text=Interview Subject" />
         <h4>An Interview With {{subject}}</h4>
         <div class="toggle-container">
-            <div ng-click="toggle()" class="thiel-audio-toggle" ng-class="{play: !playing, pause: playing}"></div>
+            <div ng-click="toggle()" class="ng-audio-toggle" ng-class="{play: !playing, pause: playing}"></div>
             <div class="time-container"><p>{{currentTime | numToSecs}} / {{duration | numToSecs}}</p></div>
         </div>
-        <audio id="thiel-interview-1-audio" class="thiel-audio" preload="auto">
+        <audio id="ng-audio-interview-1-audio" class="ng-audio" preload="auto">
             <source src="//s3.amazonaws.com/chronicle-studio/thiel/dist/audio/daniel.mp3" type="audio/mp3" />
             <source src="//s3.amazonaws.com/chronicle-studio/thiel/dist/audio/daniel.wav" type="audio/wav" />
             <source src="//s3.amazonaws.com/chronicle-studio/thiel/dist/audio/daniel.ogg" type="audio/ogg" />

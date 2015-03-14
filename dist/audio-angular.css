@@ -16,57 +16,57 @@ body {
       padding: 0;
       width: 95%; } }
 
-aside.thiel-player {
+aside.ng-audio-player {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 1em 0;
   overflow: hidden; }
   @media (max-width: 800px) {
-    aside.thiel-player {
+    aside.ng-audio-player {
       max-width: 400px; } }
-  aside.thiel-player img {
+  aside.ng-audio-player img {
     float: left;
     margin-right: 2em;
     width: 30%; }
     @media (max-width: 800px) {
-      aside.thiel-player img {
+      aside.ng-audio-player img {
         display: none; } }
-  aside.thiel-player h4 {
+  aside.ng-audio-player h4 {
     margin-top: 0; }
     @media (max-width: 650px) {
-      aside.thiel-player h4 {
+      aside.ng-audio-player h4 {
         margin-top: 1em; } }
-  aside.thiel-player .toggle-container {
+  aside.ng-audio-player .toggle-container {
     margin-right: 0;
     overflow: hidden;
     position: relative; }
-    aside.thiel-player .toggle-container .thiel-audio-toggle {
+    aside.ng-audio-player .toggle-container .ng-audio-toggle {
       height: 3em;
       width: 3em;
       background-size: contain;
       background-position: center;
       cursor: pointer;
       float: left; }
-      aside.thiel-player .toggle-container .thiel-audio-toggle:hover {
+      aside.ng-audio-player .toggle-container .ng-audio-toggle:hover {
         background-color: white; }
-      aside.thiel-player .toggle-container .thiel-audio-toggle.play {
+      aside.ng-audio-player .toggle-container .ng-audio-toggle.play {
         background-image: url("http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-play.png"); }
-      aside.thiel-player .toggle-container .thiel-audio-toggle.pause {
+      aside.ng-audio-player .toggle-container .ng-audio-toggle.pause {
         background-image: url("http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-pause.png"); }
-    aside.thiel-player .toggle-container .time-container {
+    aside.ng-audio-player .toggle-container .time-container {
       left: 3em;
       margin-top: -3%;
       position: absolute;
       top: 50%; }
       @media (max-width: 800px) {
-        aside.thiel-player .toggle-container .time-container {
+        aside.ng-audio-player .toggle-container .time-container {
           margin-top: -2%; } }
       @media (max-width: 350px) {
-        aside.thiel-player .toggle-container .time-container {
+        aside.ng-audio-player .toggle-container .time-container {
           margin-top: -3.5%; } }
-      aside.thiel-player .toggle-container .time-container.timePlay {
+      aside.ng-audio-player .toggle-container .time-container.timePlay {
         opacity: 1; }
-      aside.thiel-player .toggle-container .time-container p {
+      aside.ng-audio-player .toggle-container .time-container p {
         margin: 0; }
 
 /*# sourceMappingURL=audio-angular.css.map */

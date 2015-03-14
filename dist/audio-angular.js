@@ -3,7 +3,7 @@ var app = angular.module('Ng-Audio', []);
 app.controller('InterviewCtrl', ['$scope', 'playPauseService', 'timeControlService', function ($scope, playPauseService, timeControlService) {
 	$scope.subject = "Daniel Friedman";
 	$scope.playing = false;
-	$scope.audio = document.getElementById('thiel-interview-1-audio');
+	$scope.audio = document.getElementById('ng-audio-interview-1-audio');
 	$scope.duration = 125; // in seconds
 
 	$scope.toggle = function () {

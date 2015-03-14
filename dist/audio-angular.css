@@ -1,20 +1,20 @@
 /* media query vars */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto;
   max-width: 600px;
   padding: 1em;
   width: 60%; }
   @media (max-width: 800px) {
     body {
-      width: 80%;
-      border: none; } }
+      border: none;
+      width: 80%; } }
   @media (max-width: 350px) {
     body {
-      width: 95%;
-      padding: 0; } }
+      padding: 0;
+      width: 95%; } }
 
 aside.thiel-player {
   border-top: 1px solid #ccc;
@@ -25,9 +25,9 @@ aside.thiel-player {
     aside.thiel-player {
       max-width: 400px; } }
   aside.thiel-player img {
-    width: 30%;
     float: left;
-    margin-right: 2em; }
+    margin-right: 2em;
+    width: 30%; }
     @media (max-width: 800px) {
       aside.thiel-player img {
         display: none; } }
@@ -37,16 +37,16 @@ aside.thiel-player {
       aside.thiel-player h4 {
         margin-top: 1em; } }
   aside.thiel-player .toggle-container {
-    overflow: hidden;
     margin-right: 0;
+    overflow: hidden;
     position: relative; }
     aside.thiel-player .toggle-container .thiel-audio-toggle {
       height: 3em;
       width: 3em;
       background-size: contain;
       background-position: center;
-      float: left;
-      cursor: pointer; }
+      cursor: pointer;
+      float: left; }
       aside.thiel-player .toggle-container .thiel-audio-toggle:hover {
         background-color: white; }
       aside.thiel-player .toggle-container .thiel-audio-toggle.play {
@@ -54,9 +54,9 @@ aside.thiel-player {
       aside.thiel-player .toggle-container .thiel-audio-toggle.pause {
         background-image: url("http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-pause.png"); }
     aside.thiel-player .toggle-container .time-container {
+      left: 3em;
       margin-top: -3%;
       position: absolute;
-      left: 3em;
       top: 50%; }
       @media (max-width: 800px) {
         aside.thiel-player .toggle-container .time-container {

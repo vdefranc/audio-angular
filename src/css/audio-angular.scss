@@ -9,9 +9,9 @@ aside.thiel-player {
 	}
 
 	img {
-		width: 30%;
 		float: left;
 		margin-right: 2em;
+		width: 30%;
 
 		@media #{$tablet} {
 			display: none;
@@ -26,18 +26,18 @@ aside.thiel-player {
 	}
 
 	.toggle-container {
-		overflow: hidden;
 		margin-right: 0;
+		overflow: hidden;
 		position: relative;
-		//padding-top: 1.2em;
 
 		.thiel-audio-toggle {
 			height: 3em;
 			width: 3em;
+
 			background-size: contain;
 			background-position: center;
-			float: left;
 			cursor: pointer;
+			float: left;
 
 			&:hover {
 				background-color: white;
@@ -51,11 +51,11 @@ aside.thiel-player {
 		}
 
 		.time-container{
+			left: 3em;
 			margin-top: -3%;
 			position: absolute;
-			left: 3em;
 			top: 50%;
-			
+
 			@media #{$tablet} {
 				margin-top: -2%;
 			}
@@ -65,7 +65,7 @@ aside.thiel-player {
 			}
 
 			&.timePlay {
-					opacity: 1;
+				opacity: 1;
 			}
 
 			p {

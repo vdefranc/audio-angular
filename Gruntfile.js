@@ -29,8 +29,7 @@ module.exports = function(grunt) {
 	    	files: ['src/js/**/*.js', 'src/js/*.js'],
 	      	options: {
 	        	globals: {
-	          		//jQuery: true,
-	          		//angular: true
+	          		angular: true
 	        	}
 	      	}
 	    },
@@ -51,15 +50,14 @@ module.exports = function(grunt) {
 				dest: 'src/css/compiled/compiled-sass.scss'
 			}
 		},
-	    open: { //not added to dependencies yet <<<<<<<<<<<<<<<<<<<<<<<<<<
+	    open: {
 			server: {
 				path: 'http://localhost:<%= connect.options.port %>'
 			}
    		},
-		connect: { //not added to dependencies yet <<<<<<<<<<<<<<<<<<<<<<<<<<
+		connect: {
 			options: {
 					port: 9000,
-					// change this to '0.0.0.0' to access the server from outside
 					hostname: 'localhost'
 				},
 			livereload: {
@@ -75,7 +73,6 @@ module.exports = function(grunt) {
 		},
 	});
 
-	// Load the plugin that provides the "uglify" task.
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jasmine');
@@ -83,9 +80,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	//grunt.loadNpmTasks('');
 
-	// Default task(s).
 	grunt.registerTask('build', [ 'jshint', 'concat', 'sass' ]);
 	grunt.registerTask('server', ['connect:livereload', 'open', 'watch' ] );
 	grunt.registerTask('default', ['build']);

@@ -8,7 +8,7 @@
   </head>
   <body ng-app="Ng-Audio">
   	<h1>Simple Angular Audio Widget</h1>
-    <p>This is an audio widget designed to play a short interview. Multiple interviews can be embedded very easily into a single page by creating discrete controlers. You can see the player in action by viewing <a href="http://chronicle.com/article/The-Rich-Mans-Dropout-Club/151703/">The Rich Man's Dropout Club</a>, a story that I produced for The Chronicle of Higher Education.</p>
+    <p>This is an audio widget designed to play a short interview. Multiple interviews can be embedded very easily into a single page by creating discrete controlers. You can see the player in action by viewing <a href="http://chronicle.com/article/The-Rich-Mans-Dropout-Club/151703/">The Rich Man's Dropout Club</a>, a story I produced for The Chronicle of Higher Education.</p>
     <aside ng-controller="InterviewCtrl as ctrl" id="thiel-interview-1" class="thiel-player" >
         <img src="//placehold.it/600x400&text=Interview Subject" />
         <h4>An Interview With {{subject}}</h4>
@@ -22,6 +22,5 @@
             <source src="//s3.amazonaws.com/chronicle-studio/thiel/dist/audio/daniel.ogg" type="audio/ogg" />
         </audio>
     </aside>
-
   </body>
 </html>

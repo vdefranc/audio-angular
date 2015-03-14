@@ -11,6 +11,7 @@ app.controller('InterviewCtrl', ['$scope', 'playPauseService', 'timeControlServi
 		$scope.playing = playPauseService.toggle($scope.audio, $scope.playing);
 	};
 
+	// sets listener for for time changes
 	timeControlService($scope);
 }]);
 
@@ -30,12 +31,9 @@ app.service('playPauseService', function () {
 	};
 });
 
+// updates displayed current time
 app.factory('timeControlService', function () {
 	return function (_scope) {
-		// update time on doc load
-		window.onload = updateTime;
-
-		// subsequent time updates
 		_scope.audio.addEventListener('timeupdate', function() {
 			updateTime();
 

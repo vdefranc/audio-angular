@@ -21,14 +21,16 @@ aside.thiel-player {
   border-bottom: 1px solid #ccc;
   padding: 1em 0;
   overflow: hidden; }
+  @media (max-width: 800px) {
+    aside.thiel-player {
+      max-width: 400px; } }
   aside.thiel-player img {
     width: 30%;
     float: left;
     margin-right: 2em; }
-    @media (max-width: 650px) {
+    @media (max-width: 800px) {
       aside.thiel-player img {
-        width: 100%;
-        float: none; } }
+        display: none; } }
   aside.thiel-player h4 {
     margin-top: 0; }
     @media (max-width: 650px) {
@@ -36,7 +38,8 @@ aside.thiel-player {
         margin-top: 1em; } }
   aside.thiel-player .toggle-container {
     overflow: hidden;
-    margin-right: 0; }
+    margin-right: 0;
+    position: relative; }
     aside.thiel-player .toggle-container .thiel-audio-toggle {
       height: 3em;
       width: 3em;
@@ -51,9 +54,16 @@ aside.thiel-player {
       aside.thiel-player .toggle-container .thiel-audio-toggle.pause {
         background-image: url("http://s3.amazonaws.com/chronicle-studio/thiel/dist/img/icons/thiel-pause.png"); }
     aside.thiel-player .toggle-container .time-container {
-      float: left;
-      width: 80%;
-      padding-top: 0.45em; }
+      margin-top: -3%;
+      position: absolute;
+      left: 3em;
+      top: 50%; }
+      @media (max-width: 800px) {
+        aside.thiel-player .toggle-container .time-container {
+          margin-top: -2%; } }
+      @media (max-width: 350px) {
+        aside.thiel-player .toggle-container .time-container {
+          margin-top: -3.5%; } }
       aside.thiel-player .toggle-container .time-container.timePlay {
         opacity: 1; }
       aside.thiel-player .toggle-container .time-container p {
